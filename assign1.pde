@@ -6,7 +6,6 @@ int BGx,BG1x,BG2x,HPw,ENx,ENy,TRx,TRy;
 void setup () {
   size(640,480) ;  // must use this size.
 
-  //bg
   bg2      =  loadImage("img/bg2.png");
   bg1      =  loadImage("img/bg1.png");
   enemy    =  loadImage("img/enemy.png");
