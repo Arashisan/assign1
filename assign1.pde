@@ -12,7 +12,7 @@ void setup () {
   fighter  =  loadImage("img/fighter.png");
   hp       =  loadImage("img/hp.png");
   treasure =  loadImage("img/treasure.png");
-  BGx = 1280;
+  BGx = 0;
   HPw = floor(random(10,201));
   ENy = floor(random(60,401));
   TRx = floor(random(20,501));
@@ -27,8 +27,8 @@ void draw() {
   //bg
   image(bg2,BG2x,0);
   image(bg1,BG1x,0);
-  BG2x = BGx - 640;
-  BG1x = BGx - 1280;
+  BG2x = BGx + 640;
+  BG1x = BGx;
   BGx += 2;
   BG2x = (BG2x %= 1280) - 640;
   BG1x = (BG1x %= 1280) - 640;
